@@ -29,6 +29,16 @@
         "lat": 53.48112903427793,
         "lng": -2.248687839334522
       }
+    },
+    {
+      "id": 4,
+      "name": "Terrace NQ",
+      "price": 5.80,
+      "googleMapsLink": "https://maps.app.goo.gl/5hGwLAYX1aGjHGzR7",
+      "location": {
+        "lat": 53.484222927220465,
+        "lng": -2.2366648682395374
+      }
     }
   ]
 } 
