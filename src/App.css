@@ -1,0 +1,57 @@
+.app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #1a1a1a;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+main {
+  margin: 2rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  margin-top: 2rem;
+  color: #666;
+  font-size: 0.9em;
+}
+
+/* Leaflet popup customization */
+.leaflet-popup-content {
+  padding: 0.5rem;
+}
+
+.leaflet-popup-content h3 {
+  margin: 0 0 0.5rem 0;
+  color: #1a1a1a;
+}
+
+.leaflet-popup-content p {
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.leaflet-popup-content a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.leaflet-popup-content a:hover {
+  text-decoration: underline;
+}

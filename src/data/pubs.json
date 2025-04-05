@@ -1,0 +1,34 @@
+{
+  "pubs": [
+    {
+      "id": 1,
+      "name": "The Wharf",
+      "price": 6.40,
+      "googleMapsLink": "https://maps.app.goo.gl/9quo4znGBd8MBbCW6",
+      "location": {
+        "lat": 53.473659481119974,
+        "lng": -2.2565951905982624
+      }
+    },
+    {
+      "id": 2,
+      "name": "The Oast House",
+      "price": 4.50,
+      "googleMapsLink": "https://maps.app.goo.gl/urP7D9FrHM4rnc3XA",
+      "location": {
+        "lat": 53.48065242773907,
+        "lng": -2.2510517039466613
+      }
+    },
+    {
+      "id": 3,
+      "name": "Mulligans",
+      "price": 7.50,
+      "googleMapsLink": "https://maps.app.goo.gl/tc7Xcrf5pMY7KpwT8",
+      "location": {
+        "lat": 53.48112903427793,
+        "lng": -2.248687839334522
+      }
+    }
+  ]
+} 
