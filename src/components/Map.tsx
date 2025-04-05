@@ -5,7 +5,7 @@ import L from 'leaflet';
 
 // Create custom pint icon
 const pintIcon = new L.Icon({
-  iconUrl: './pint-icon.svg',
+  iconUrl: '/guinness-tracker/pint-icon.svg',
   iconSize: [24, 41],
   iconAnchor: [12, 41],
   popupAnchor: [1, -34],
