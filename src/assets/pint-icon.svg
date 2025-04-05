@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24" height="41" viewBox="0 0 24 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Glass body -->
+  <path d="M8 5H16L14 32H10L8 5Z" fill="#2C1810"/>
+  <!-- Foam -->
+  <path d="M8 4H16L15 4.5H9L8 4Z" fill="#FFFFFF"/>
+</svg> 

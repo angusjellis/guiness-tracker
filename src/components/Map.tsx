@@ -2,10 +2,11 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import { Pub } from '../types/pub';
 import L from 'leaflet';
+import pintIconSvg from '../assets/pint-icon.svg';
 
 // Create custom pint icon
 const pintIcon = new L.Icon({
-  iconUrl: '/guinness-tracker/pint-icon.svg',
+  iconUrl: pintIconSvg,
   iconSize: [24, 41],
   iconAnchor: [12, 41],
   popupAnchor: [1, -34],
