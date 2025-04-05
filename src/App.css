@@ -102,3 +102,32 @@ footer {
   font-size: 1.3em;
   margin: 0.5rem 0;
 }
+
+/* Guinness marker styling */
+.guinness-marker {
+  filter: hue-rotate(0deg) saturate(0.5) brightness(0.7);
+}
+
+.leaflet-marker-icon.guinness-marker {
+  filter: hue-rotate(0deg) saturate(0.5) brightness(0.7);
+}
+
+/* Pint marker styling */
+.pint-marker {
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.3));
+}
+
+/* Add a subtle animation to the markers */
+@keyframes float {
+  0% { margin-top: 0; }
+  50% { margin-top: -5px; }
+  100% { margin-top: 0; }
+}
+
+.guinness-marker {
+  animation: float 3s ease-in-out infinite;
+}
+
+.pint-marker {
+  animation: float 3s ease-in-out infinite;
+}

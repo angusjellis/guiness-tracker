@@ -3,12 +3,13 @@ import 'leaflet/dist/leaflet.css';
 import { Pub } from '../types/pub';
 import L from 'leaflet';
 
-// Fix for default marker icons in react-leaflet
-delete (L.Icon.Default.prototype as any)._getIconUrl;
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: '/guinness-tracker/marker-icon-2x.png',
-  iconUrl: '/guinness-tracker/marker-icon.png',
-  shadowUrl: '/guinness-tracker/marker-shadow.png',
+// Create custom pint icon
+const pintIcon = new L.Icon({
+  iconUrl: '/guinness-tracker/pint-icon.svg',
+  iconSize: [24, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  className: 'pint-marker'
 });
 
 interface MapProps {
@@ -33,6 +34,7 @@ const Map = ({ pubs }: MapProps) => {
         <Marker
           key={pub.id}
           position={[pub.location.lat, pub.location.lng]}
+          icon={pintIcon}
         >
           <Popup>
             <div>
@@ -49,4 +51,4 @@ const Map = ({ pubs }: MapProps) => {
   );
 };
 
-export default Map; 
+export default Map;
