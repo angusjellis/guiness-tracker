@@ -37,7 +37,7 @@ const Map = ({ pubs }: MapProps) => {
           <Popup>
             <div>
               <h3>{pub.name}</h3>
-              <p>Guinness: £{pub.price.toFixed(2)}</p>
+              <p className="price">Guinness: £{pub.price.toFixed(2)}</p>
               <a href={pub.googleMapsLink} target="_blank" rel="noopener noreferrer">
                 View on Google Maps
               </a>
