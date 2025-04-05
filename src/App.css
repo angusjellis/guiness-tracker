@@ -10,43 +10,57 @@
 body {
   background-color: #f5f5f5;
   margin: 0;
+  min-height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .app {
-  max-width: 1280px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
   margin-bottom: 2rem;
-  background: linear-gradient(135deg, var(--irish-green) 0%, var(--guinness-brown) 100%);
+  background-color: var(--irish-green);
   padding: 2rem;
   border-radius: 12px;
   color: var(--text-light);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
 }
 
 header h1 {
-  font-size: 2.5em;
+  font-size: 3em;
   margin: 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  color: var(--text-light);
 }
 
 header p {
-  font-size: 1.2em;
+  font-size: 1.4em;
   margin: 1rem 0 0;
   opacity: 0.9;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--text-light);
 }
 
 main {
+  flex: 1;
   margin: 2rem 0;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border: 2px solid var(--irish-green);
+  min-height: 600px;
+  height: calc(100vh - 400px);
+  max-width: 100%;
 }
 
 footer {
@@ -57,6 +71,7 @@ footer {
   background-color: var(--irish-green);
   color: var(--text-light);
   border-radius: 8px;
+  max-width: 100%;
 }
 
 /* Leaflet popup customization */
@@ -130,4 +145,39 @@ footer {
 
 .pint-marker {
   animation: float 3s ease-in-out infinite;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .app {
+    padding: 2rem 4rem;
+  }
+  
+  main {
+    height: calc(100vh - 300px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .app {
+    padding: 2rem 6rem;
+  }
+  
+  main {
+    height: calc(100vh - 250px);
+  }
+}
+
+@media (min-width: 1600px) {
+  .app {
+    padding: 2rem 8rem;
+  }
+  
+  header h1 {
+    font-size: 3.5em;
+  }
+  
+  header p {
+    font-size: 1.6em;
+  }
 }
